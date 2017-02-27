@@ -1,0 +1,36 @@
+
+body.home-layout {
+	.navbar-brand {
+		height: auto;
+	}
+	.nav-brand-img {
+		height: 30px;
+	}
+	a:focus {
+		outline: none;
+	}
+	.search_div {
+		background: #eee none repeat scroll 0 0;
+		border-radius: 7px;
+		margin: 20px;
+		text-align: center;
+		padding: 14px;
+	}
+	.botom-menu {
+		width: 100%;
+	}
+	.nav.navbar-nav.bottom {
+		width: 100% !important;
+		margin: 0px;
+		li {
+			float: left !important;
+			width: 25%;
+			a {
+				padding:0px;
+				&:hover {
+					padding: 1px;
+				}
+			}
+		}
+	}
+}

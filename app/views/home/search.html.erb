@@ -1,0 +1,25 @@
+<%= render partial: "partials/slide_carousel" %>
+<div class="col-lg-12" style="padding: 0">
+	<div class="hotel-counts text-center">
+		<%= @hotels.count %> <%=t '.title', :default => @hotels.model_name.human.pluralize.titleize %> are found
+	</div>
+	<% @hotels.each do |hotel| %>
+		<div class="hotel-item">
+			<div class="column">
+				<img class="hotel-image" src="<%= asset_path('hotel.png')%>" alt="Hotel">
+			</div>
+			<div class="column">
+				Hotel Name
+				<br>
+				<i class="fa fa-map-marker" aria-hidden="true"></i> 42-34 Chantham, Tsim Sha Tsul, Hong Kong
+			</div>
+			<div class="column">
+				<div class="pull-right" style="padding-right: 10px;">
+					******
+					<br>
+					<%= link_to "Book Now", book_hotel_path(hotel), method: :post, class: 'btn btn-primary' %>
+				</div>
+			</div>
+		</div>
+	<%end %>
+</div>

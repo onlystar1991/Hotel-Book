@@ -1,0 +1,23 @@
+<%= render partial: "partials/slide_carousel" %>
+<div class="col-lg-12" style="padding: 0">
+	<div class="search_div">
+		<img src="<%= asset_path('hotel_search_background.png')%>" alt="Flower" width="50%">
+
+		<%= form_tag({controller: "home", action: "search"}, method: "get") do %>
+			<div class="input-group">
+				<span class="input-group-addon">
+					<i class="fa fa-search"></i>
+				</span>
+				<input type="search" class="form-control" placeholder="Search hotel" name="search_key" autocomplete="off">
+			</div>
+		<% end %>
+	</div>
+</div>
+<div class="col-lg-12" style="padding: 0px;">
+	<ul class="nav navbar-nav bottom">
+		<li><a href="#"><img src="<%= asset_path('leisure.png')%>" alt="Hotel" width="100%"></a></li>
+		<li><a href="#"><img src="<%= asset_path('food.png')%>" alt="Hotel" width="100%"></a></li>
+		<li><a href="#"><img src="<%= asset_path('beauty.png')%>" alt="Hotel" width="100%"></a></li>
+		<li><a href="#"><img src="<%= asset_path('life.png')%>" alt="Hotel" width="100%"></a></li>
+	</ul>
+</div>

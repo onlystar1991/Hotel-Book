@@ -56,3 +56,6 @@ gem 'devise'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
+gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped'
+gem 'paperclip'
+gem "font-awesome-rails"

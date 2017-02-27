@@ -1,0 +1,23 @@
+// Place all the styles related to the hotels controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.hotel-counts {
+	padding: 10px;
+}
+.hotel-item {
+	display: inline-flex;
+    height: 100%;
+    padding: 5px;
+    width: 100%;
+	> div {
+		background: #eee;
+	}
+	.column {
+		width: 33.33%;
+	}
+}
+.hotel-image {
+	width: 150px;
+	height: 130px;
+}
